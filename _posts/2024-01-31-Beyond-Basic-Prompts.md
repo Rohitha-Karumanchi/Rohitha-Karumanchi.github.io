@@ -78,4 +78,4 @@ Start small:
 In a world where everyone has access to the same AI tools, your competitive advantage isn't in having better prompts – it's in having better inputs. Stop asking AI to think for you, and start using it to enhance your well-researched thoughts.
 What challenge came into your mind while reading this? That's what you are going to tackle now with this research-driven approach...
 
-#### Inspired from: (https://www.youtube.com/@VickyZhaoBEEAMP)
+#### Inspired from: [VickyZhaoBEEAMP](https://www.youtube.com/@VickyZhaoBEEAMP)
