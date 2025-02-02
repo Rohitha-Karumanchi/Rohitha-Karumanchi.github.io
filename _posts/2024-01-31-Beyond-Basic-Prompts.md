@@ -24,7 +24,7 @@ Instead of using AI as your primary brain, use it as your enhancement engine. Le
 ## 1. Deep-Dive Research
 Most of us jump straight to AI for answers. Instead, start with targeted research. Think of it as building your knowledge arsenal before going into battle.
 Traditional approach: "Hey , how do I optimize my distributed system?"
-Smart approach: Use tools like [Elicit AI][https://elicit.com/] to dive deep into real research.
+Smart approach: Use tools like [Elicit AI](https://elicit.com/) to dive deep into real research.
 
 ###### Why it works:
 * Access to peer-reviewed studies on similar optimization challenges
@@ -34,7 +34,7 @@ Smart approach: Use tools like [Elicit AI][https://elicit.com/] to dive deep int
 For instance, you might discover a paper about how Uber optimized their dispatch system to handle 1 million requests per second – actual implementation details you won't find in generic AI responses.
 
 ## 2. Synthesis and Pattern Recognition
-Raw research data is like uncut diamonds – valuable but not yet usable. This is where you want AI to help you find patterns and insights and here's where tools like [NotebookLM][https://notebooklm.google/] shines as your personal research assistant. Think of it as your technical advisor who's actually read all those papers you found.
+Raw research data is like uncut diamonds – valuable but not yet usable. This is where you want AI to help you find patterns and insights and here's where tools like [NotebookLM](https://notebooklm.google/) shines as your personal research assistant. Think of it as your technical advisor who's actually read all those papers you found.
 
 ###### The magic happens when you:
 * Feed it the research papers about distributed systems optimization
@@ -42,7 +42,7 @@ Raw research data is like uncut diamonds – valuable but not yet usable. This i
 * Get contextualized insights that combine multiple research findings
 
 ## 3. Strategic Planning: Turning Research into Reality
-Now comes the fun part. With research-backed insights in hand, you can use any AI (like [Claude][https://claude.ai/] or [ChatGPT][https://chatgpt.com/]) to create detailed implementation plans, here you're not starting from scratch – you're building on solid research:
+Now comes the fun part. With research-backed insights in hand, you can use any AI (like [Claude](https://claude.ai/) or [ChatGPT](https://chatgpt.com/]) to create detailed implementation plans, here you're not starting from scratch – you're building on solid research:
 * Share the synthesized insights
 * Request practical implementation plans
 * Get detailed technical specifications that actually make sense for your context
@@ -78,4 +78,4 @@ Start small:
 In a world where everyone has access to the same AI tools, your competitive advantage isn't in having better prompts – it's in having better inputs. Stop asking AI to think for you, and start using it to enhance your well-researched thoughts.
 What challenge came into your mind while reading this? That's what you are going to tackle now with this research-driven approach...
 
-##### Inspired from: https://www.youtube.com/@VickyZhaoBEEAMP
+#### Inspired from: (https://www.youtube.com/@VickyZhaoBEEAMP)
