@@ -3,7 +3,7 @@ title: Beyond Basic Prompts- How to 10x Your AI Results Through Smart Research
 description: >-
   Dropping a quick question into ChatGPT and hoping for brilliance. But here's what separates good results from game-changing ones: it's not about prompting better, it's about feeding better information to begin with.
 author: rk
-date: 2024-01-31 20:55:00 +0800
+date: 2025-01-31 20:55:00 +0800
 categories: [AI, Prompts, Research, Output]
 tags: [AI]
 pin: true
