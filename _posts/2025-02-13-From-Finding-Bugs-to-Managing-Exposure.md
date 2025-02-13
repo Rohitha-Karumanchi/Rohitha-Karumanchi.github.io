@@ -50,17 +50,7 @@ Remember that "low severity" configuration issue? If it's in your payment proces
 #### Prevention Over Reaction
 We're shifting from "find and fix" to "prevent and protect." This means thinking about security architecture, access controls, and network segmentation from day one.
 
-### Just one more example and then we reach the end:
-Again 💭: A scanner flags a high-severity vulnerability in an open-source library your product uses. Panic mode? Not necessarily. 
-Exposure management helps you pause and ask:
-* Is this specific scenario that results in vulnerability even exist in our product? (Coz most of the times, usage of a library doesn't lead to exploit but some specific issues like a port or some dependency)
-* Is it externally accessible? (If it's not then.. may be you can reduce a number in severity score?)
-* Are there any real-world exploits?
-If the answer to these is no, then maybe it’s not your top priority.
-Instead, you might shift your focus to something actively being targeted, like an exposed admin panel with weak authentication. See the difference?
-
-## Making the Shift: Practical Steps
-No, we're not going to reach the end without seeing practical steps📝.
+## Making the Shift: Practical Steps📝
 * Map Your Attack Surface
 Start simple. List out your public-facing assets. What can attackers see? What could they potentially reach?
 * Understand Business Context
@@ -68,7 +58,7 @@ Talk to your business teams. Understand which systems are critical for daily ope
 * Think Like an Attacker
 Don't just rely on scanners. Ask yourself: "If I were trying to breach my own system, what would I target first?"
 
-#### Let's be honest – is it just a buzzword. So is exposure management just vulnerability management with a fancy new name?
+#### Let's be honest – is it just a buzzword? So is exposure management just vulnerability management with a fancy new name?
 I don't think so, and here's why: It's not about doing something completely different; it's about doing something more comprehensive. 
 
 Think of it like upgrading from checking your door locks (vulnerability management) to having a complete home security system with cameras, motion sensors, and neighborhood watch (exposure management).
