@@ -10,21 +10,21 @@ pin: true
 media_subpath: '/posts/20180809'
 ---
 
-# 🛡️ LSA Protection in Windows: What It Is, Why It Matters, and Why It’s Too Rarely Enabled
+### LSA Protection in Windows: What It Is, Why It Matters, and Why It’s Too Rarely Enabled
 
 If you work in security or IT and care about **credential protection**, you’ve likely heard of LSA Protection (RunAsPPL). But how often is it actually enabled in your environment/organisation?
 
 **In this blog, we'll look into:**
 
-- 🔍 What is LSA and what does "RunAsPPL" really mean?
-- ⚠️ Why LSA protection is crucial for defending credentials
-- 🛠️ How attackers try to bypass it (real CVEs and techniques)
-- 🧩 Why many orgs still leave it disabled (risks & tradeoffs)
-- 🚀 How to check, enable, and audit it across your estate
+- What is LSA and what does "RunAsPPL" really mean?
+- Why LSA protection is crucial for defending credentials
+- How attackers try to bypass it (real CVEs and techniques)
+- Why many orgs still leave it disabled (risks & tradeoffs)
+- How to check, enable, and audit it across your estate
 
 ---
 
-## 🔐 What is LSA and What is RunAsPPL?
+## What is LSA and What is RunAsPPL?
 
 **LSA (Local Security Authority Subsystem Service)**  
 The `lsass.exe` process in Windows is responsible for:
@@ -46,18 +46,18 @@ It means only other protected processes or kernel-level code can access LSASS me
 
 ---
 
-## ⚠️ Why LSA Protection Matters
+## Why LSA Protection Matters
 
 - **Credential theft** from LSASS is a key move for advanced attackers.
   - **Mimikatz** and its clones extract passwords, hashes, or Kerberos tickets.
   - Enables **lateral movement**: attackers “Pass-the-Hash” or “Pass-the-Ticket” to move deeper into the network.
-- 💪 With **LSA Protection**, attackers can no longer dump credentials using user-mode tools—they’ll need to find a kernel exploit or weak/legacy driver instead.
+- With **LSA Protection**, attackers can no longer dump credentials using user-mode tools—they’ll need to find a kernel exploit or weak/legacy driver instead.
 
 > It’s not a cure-all, but dramatically limits credential theft through LSASS memory.
 
 ---
 
-## 🔦 Real Attacks and CVEs Involving LSASS
+## Real Attacks and CVEs Involving LSASS
 
 **Relevant CVEs/examples:**
 - `CVE-2022-26966`: Elevation of privilege via LSA spoofing
@@ -71,16 +71,16 @@ It means only other protected processes or kernel-level code can access LSASS me
 
 | Reason                         | Description                                                                                |
 |--------------------------------|--------------------------------------------------------------------------------------------|
-| 💥 Compatibility Issues        | Older drivers or third-party security products may fail, crash, or lose functionality      |
-| 🛠️ Tool Limitations            | Password recovery or forensics tools may stop working                                      |
-| 📆 Deployment Risk             | Sudden change can disrupt critical workflows or lock out users/services                    |
-| 🤔 Lack of Awareness           | Admins may not know this control exists or what it blocks                                  |
+| Compatibility Issues        | Older drivers or third-party security products may fail, crash, or lose functionality      |
+| Tool Limitations            | Password recovery or forensics tools may stop working                                      |
+| Deployment Risk             | Sudden change can disrupt critical workflows or lock out users/services                    |
+| Lack of Awareness           | Admins may not know this control exists or what it blocks                                  |
 
 > Even Microsoft does **not** enable RunAsPPL by default on upgrades—only on clean installs of newer Windows releases.
 
 ---
 
-## 📝 How to Check If LSA Protection is Enabled
+## How to Check If LSA Protection is Enabled
 
 **To check on a local machine:**
 ```
@@ -91,7 +91,7 @@ Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name "RunAs
 
 ---
 
-## 🔄 How to Enable RunAsPPL Safely
+## How to Enable RunAsPPL Safely
 
 **Update the registry (reboot required):**
 ```
@@ -106,7 +106,7 @@ Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name "RunAs
 
 ---
 
-## ⚙️ Audit LSA Protection Across Your Domain
+## Audit LSA Protection Across Your Domain
 
 **PowerShell Audit Script:**
 ```
@@ -129,7 +129,7 @@ Write-Output "Could not connect to $computer"
 
 ---
 
-## 💡 Troubleshooting Tips
+## Troubleshooting Tips
 
 - **Startup failures after enabling RunAsPPL:** Some security agents or management tools may be incompatible—consult vendor documentation and update drivers.
 - **Memory dump tool failures:** This is expected. Use **kernel-debugging** tools or protected auditing software for incident response.
@@ -137,7 +137,7 @@ Write-Output "Could not connect to $computer"
 
 ---
 
-## 🧐 Final Thoughts
+## Final Thoughts
 
 - **LSA Protection isn’t a silver bullet**, but it is a critical baseline for Windows hardening.
 - **If an attacker gets admin,** LSA Protection may be the barrier that blocks lateral movement via credential theft.
@@ -147,7 +147,7 @@ Write-Output "Could not connect to $computer"
     - Event log monitoring (e.g., Sysmon Event ID 10 for LSASS access attempts)
 - **Recommended workflow:** Awareness → Testing → Gradual Deployment → Wide-scale enforcement
 
-## 📚 References & Further Reading
+## References & Further Reading
 
 - [Microsoft: Configure LSA Protection](https://learn.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection)
 - [Microsoft: Credential Guard Overview](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard)
@@ -156,5 +156,5 @@ Write-Output "Could not connect to $computer"
 
 ---
 
-*Have questions, or need assistance? Let me know via GitHub Issue or Discussion or Comment Below*
+*Have questions, or need assistance? Let me know via GitHub Issue or Discussion*
 
