@@ -1,7 +1,7 @@
 ---
 title: LSA Protection in Windows: How to Prevent Credential Theft with RunAsPPL
 description: >-
-  Protecting Windows credentials is more critical than ever. LSA Protection (RunAsPPL) is a powerful but often overlooked defense that helps prevent attackers from stealing sensitive credentials stored in LSASS. This guide explains what it is, why it matters, and how to enable it safely in your environment.
+  Protecting Windows credentials is more critical than ever. LSA Protection (RunAsPPL) is a powerful but often overlooked defense that helps prevent attackers from stealing sensitive credentials stored in LSASS.
 author: rk
 date: 2025-07-08 20:55:00 +0800
 categories: [Credential Protection, Hardening, Windows Security]
